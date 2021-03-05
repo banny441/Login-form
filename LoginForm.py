@@ -120,7 +120,7 @@ def password_not_recognised():
     password_not_recog_screen = Toplevel(login_screen)
     password_not_recog_screen.title("Success")
     password_not_recog_screen.geometry("200x150")
-    Label(password_not_recog_screen, text="Wrong Password ",font="Times new roman").pack()
+    Label(password_not_recog_screen, text="Incorrect Password ",).pack()
     Button(password_not_recog_screen, text="OK", command=delete_password_not_recognised).pack()
 
 
@@ -131,7 +131,7 @@ def user_not_found():
     user_not_found_screen = Toplevel(login_screen)
     user_not_found_screen.title("Success")
     user_not_found_screen.geometry("200x150")
-    Label(user_not_found_screen, text="User Not Found",font="Times new roman").pack()
+    Label(user_not_found_screen, text="Incorrect username or User name not found").pack()
     Button(user_not_found_screen, text="OK", command=delete_user_not_found_screen).pack()
 
 
