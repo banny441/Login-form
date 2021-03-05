@@ -66,18 +66,18 @@ def login():
 # Implementing event on register button
 
 def register_user():
-    user_info = username.get()
+    username_info = username.get()
     password_info = password.get()
 
-    file = open(user_info, "w")
-    file.write=(user_info + "\n")
+    file = open(username_info, "w")
+    file.write(username_info + "\n")
     file.write(password_info)
     file.close()
 
     username_entry.delete(0, END)
     password_entry.delete(0, END)
 
-    Label(register_screen, text="Registration done successfully", fg="blue", font=("Times new roman", 14)).pack()
+    Label(register_screen, text="Registration done Successfully", fg="green", font=("Times new roman", 14)).pack()
 
 
 # Implementing event on login button
@@ -166,3 +166,4 @@ def main_account_screen():
 
 
 main_account_screen()
+
