@@ -155,7 +155,7 @@ def main_account_screen():
     global main_screen
     main_screen = Tk()
     main_screen.geometry("300x250")
-    main_screen.title("Account Login")
+    main_screen.title("Login Form")
     Label(text="Select Your Choice", bg="yellow", width="300", height="2", font=("Times new roman", 14)).pack()
     Label(text="").pack()
     Button(text="Login", height="4", width="40", command=login).pack()
